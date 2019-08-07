@@ -1,0 +1,10 @@
+
+.PowerFolder/.PowerFolder.db
+.PowerFolder/FolderStatistic
+.PowerFolder/ignore.patterns
+.PowerFolder/Last_sync
+.PowerFolder/meta/.PowerFolder/.PowerFolder.db
+.PowerFolder/meta/.PowerFolder/FolderStatistic
+.PowerFolder/meta/.PowerFolder/Last_sync
+.PowerFolder/meta/Members
+desktop.ini
