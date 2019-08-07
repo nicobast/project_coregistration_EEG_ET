@@ -41,6 +41,7 @@ TO DO:
 
 4. --> copy project files
 # - contains tobiilsl (lsl server that sends eyetracking data to lsl is now in project files)
+# - add am empty folder names 'data' to project file folder
 # - ALTERNATIVELY: clone source from GITHUB (https://github.com/baekgaard/tobiilsl.git)
 
 5. ## TO START CO-REGISTRATION OF EEG AND ET: run batch file: LSL_EEG+ET
