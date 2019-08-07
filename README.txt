@@ -20,7 +20,7 @@ TO DO:
 1. ## INSTALL LABSTREAMING LAYER
 # info: need to create a build from source (see: https://github.com/sccn/labstreaminglayer/wiki/INSTALL)
 # - clone source files with GITHUB
-# - create BUILD with CMAKE (creates VisualStudio Files from Source)
+# - create BUILD with CMAKE in admin/sudo mode (creates VisualStudio Files from Source)
 # - build INSTALLATION (install) with MSVC (implemented in Visual Studio C++ Tools)
 ---> now lab streaming layer should be installed according to the system
 
