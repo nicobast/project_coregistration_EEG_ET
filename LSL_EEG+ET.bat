@@ -11,6 +11,16 @@ ECHO PRESS KEY TO START LAB STREAMING LAYER SCRIPTS...
 PAUSE
 
 cd C:\Users\Nico\PowerFolders\project_coregistration_EEG_ET
-start python tobiilsl.py
-start python ReceivePresentationEventmarker.py %id%
-start python ReceiveEyeTrackingData.py %id%
+start "tobiilsl" python tobiilsl.py
+start "receive_presentation_eventmarker" python ReceivePresentationEventmarker.py %id%
+start "receive_eyetracking_data" python ReceiveEyeTrackingData.py %id%
+
+ECHO ARRANGE SCRIPT WINDOWS ON DISPLAY...
+
+cmdow tobiilsl /mov 0 0
+cmdow receive_presentation_eventmarker /mov 1000 500
+cmdow receive_eyetracking_data /mov 1000 0
+
+cmdow tobiilsl /siz 1000 500
+cmdow receive_presentation_eventmarker /siz 1000 500
+cmdow receive_eyetracking_data /siz 1000 500

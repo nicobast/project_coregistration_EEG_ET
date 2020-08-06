@@ -1,0 +1,32 @@
+SOP – co-registration EEG and EyeTracking
+
+For installation and technical details see: https://github.com/nicobast/project_coregistration_EEG_ET
+
+1.	Make sure that the room is darkened
+  a.	Screen is turned on (desktop image)
+  b.	Both ceiling lights are on
+  c.	Measure luminance with luxmeter (should be around 180 lux)
+  d.	Luxmeter sensor should be on par with head position and facing the screen
+2.	Start calibration:
+  a.	Start EyeTracker (button on the back)
+  b.	Start TobiiProEyeTrackerManager on Desktop
+  c.	Selection EyeTracker (Tobii Pro Spektrum) and select START CALIBRATION
+  (right panel)
+  d.	Position screen starts up: position participant till eye are tracked successfully
+  e.	START CALIBRATION
+  f.	 Calibration was successful, if 3 of the 5 points are hit
+    i.	Center point should always be hit
+    ii.	Hit means that the majority mean measurement (white dot) is within the displayed point (blue dot)
+3.	Start Presentation
+  a.	Check whether LSL Server is Status: Open and Name: eventmarker
+4.	Start EEG_ET (batch script file)
+  a.	Enter participant ID with suffix for specific Presentation task (e.g. xxx_posner)
+  b.	Press enter and start scripts:
+    i.	Three scripts will be started
+    ii.	LSL eye-tracker server (tobiilsl; pushed ET data into LSL)
+    iii.	LSL eye tracker client (pulls ET data and saves to file)
+      	  --> also displays left and right pupil size measurement every 250ms
+    iv.	 LSL Presentation client (pulls Presentation eventmarker and timestamp and saves to file)
+    v.	(LSL Presentation server is provided by Presentation, see 3.)
+  c.	 data is continuously recorded
+5.	Start task in Presentation

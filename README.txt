@@ -1,5 +1,7 @@
 ## This is a short guide to co-registrate EEG and EyeTracking data with lab streaming layer (lsl). ##
 
+update 06.08: added window screen position by external program cmdow. see batch file LSL_EEG+ET
+
 DESCRIPTION:
 The EEG data can be mapped to eyetracking data by local timestamps.
 Timestamps will be delivered with 1.) eventcodes sent by Presentation and 2.) Eye Tracking Data sent by the EyeTracker.
